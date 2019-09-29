@@ -2,9 +2,10 @@ package org.elvis.wang.java.util;
 
 import org.junit.Test;
 
-import java.util.WeakHashMap;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
+import static java.util.Arrays.asList;
 import static org.awaitility.Awaitility.await;
 import static org.junit.Assert.assertTrue;
 
@@ -12,6 +13,16 @@ import static org.junit.Assert.assertTrue;
  * Created by wangzhiqun on 2018/1/11.
  */
 public class WeakHashMapUnitTest {
+
+    public static void main(String[] args) {
+
+        List<String> s = asList("1","3");
+
+        System.out.println(s.contains("1"));
+
+        boolean f = Boolean.valueOf("0");
+        System.out.println(f);
+    }
 
     @Test
     public void givenWeakHashMap_whenCacheValueThatHasNoReferenceToIt_GCShouldReclaimThatObject() {

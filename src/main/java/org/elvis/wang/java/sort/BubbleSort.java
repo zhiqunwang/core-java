@@ -10,7 +10,7 @@ package org.elvis.wang.java.sort;
  *
  */
 public class BubbleSort {
-    public int[] bubbleSort(int[] arr){
+    public static int[] bubbleSort(int[] arr){
         for(int i = 0;i < arr.length - 1 ;i++){
             for(int j=0;j < arr.length- 1 - i;j++){
                 if(arr[j] < arr[j+1]){
@@ -21,5 +21,11 @@ public class BubbleSort {
             }
         }
         return arr;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1,2,5,3,9,4,6};
+
+        System.out.println(bubbleSort(arr));
     }
 }

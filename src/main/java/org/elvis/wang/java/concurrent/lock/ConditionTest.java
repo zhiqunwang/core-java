@@ -21,5 +21,9 @@ public class ConditionTest implements Runnable {
         }
     }
 
+    public static void main(String[] args) {
+
+    }
+
 
 }
